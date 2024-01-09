@@ -67,8 +67,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                 });
             })
-            
-            isConverted = !isConverted;
         })
 
     });

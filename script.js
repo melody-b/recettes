@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     const convertButtons = document.querySelectorAll(".convert-button");
 
-    let isConverted = false;
     convertButtons.forEach(convertButton => {
         convertButton.addEventListener("click", function () {
             // Conversion des quantités
@@ -42,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         let convertedQuantity;
                         let textQuantity;
                         let fraction;
-                        if (isConverted) {
+                        if (originalText.includes(" ml ")) {
                             // Reconvertir en unités d'origine
                             convertedQuantity = convertQuantity(quantity, 'ml');
                             textUnit = convertUnitToText(unit, convertedQuantity[unit]);
@@ -111,7 +110,6 @@ document.addEventListener("DOMContentLoaded", function () {
         // Trouve l'index de l'unité dans la chaîne de texte
         const unitIndex = text.indexOf(unit[0]);
 
-        console.log(unit)
         if (unit.includes("à soupe") || unit.includes("à thé")) {
             unit = unit.split(' ').slice(0, 3).join(' ')
         } else if (unit.includes("de tasse")) {

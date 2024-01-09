@@ -1,0 +1,16 @@
+{
+  "name": "recettes",
+  "version": "1.0.0",
+  "description": "Livre de recettes",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "scripts": {
+    "sass": "node-sass --watch styles/styles.scss -o ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recettes</title>
+
+  <!-- Ajoute les liens vers les fichiers CSS Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Ajoute le lien vers le fichier de styles personnalisés -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="bg-dark text-white">
+    <div class="container">
+      <h1>Recettes</h1>
+    </div>
+  </header>
+
+  <nav id="recipeTabs" class="nav nav-pills mb-3">
+    <a href="#" data-tab="salade-carottes" class="nav-item nav-link active">Salade de carottes</a>
+    <a href="#" data-tab="tofu-general-tao" class="nav-item nav-link">Tofu général Tao</a>
+    <!-- Ajoute d'autres liens pour chaque recette -->
+  </nav>
+
+  <section id="salade-carottes" class="recipe active">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 order-md-2">
+          <img src="images/salade-carottes.jpg" alt="Salade de carottes" class="img-fluid mb-3">
+        </div>
+        <div class="col-md-6 order-md-1">
+          <div class="text-container">
+            <h2>Salade de carottes</h2>
+
+            <h3>Ingrédients :</h3>
+            <ul class="ingredients-list">
+              <li class="ingredient">4 carottes</li>
+              <li class="ingredient">2 oignons verts</li>
+              <li class="ingredient" data-unit="tasse">1/4 de tasse de persil</li>
+              <li class="ingredient" data-unit="tasse">1/4 de tasse de coriandre</li>
+              <li class="ingredient" data-unit="the">1.5 cuillère à thé de moutarde de Dijon</li>
+              <li class="ingredient" data-unit="soupe">1 cuillère à soupe de miel</li>
+              <li class="ingredient" data-unit="soupe">2 cuillères à soupe de jus de citron</li>
+              <li class="ingredient" data-unit="soupe">4 cuillères à soupe d'huile d'olive extra vierge</li>
+              <li class="ingredient" data-unit="the">1/2 cuillère à thé de sel</li>
+              <li class="ingredient" data-unit="the">1/4 cuillère à thé de poivre</li>
+            </ul>
+
+            <h3>Instructions :</h3>
+            <ol>
+              <li>Éplucher et râper les carottes.</li>
+              <li>Couper les oignons verts, le persil et la coriandre finement.</li>
+              <li>Dans un bol, mélanger la moutarde de Dijon, le miel, le jus de citron, l'huile d'olive, le sel et le
+                poivre pour faire la vinaigrette.</li>
+              <li>Dans un grand saladier, mélanger les carottes râpées, les oignons verts, le persil et la coriandre.
+              </li>
+              <li>Verser la vinaigrette sur la salade et bien mélanger.</li>
+              <li>Placer au réfrigérateur pendant au moins 30 minutes avant de servir.</li>
+            </ol>
+
+            <!-- Bouton pour convertir les quantités en ml -->
+            <button class="convert-button btn btn-primary">Convertir les unités</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="tofu-general-tao" class="recipe">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 order-md-2">
+          <img src="images/tofu-general-tao.jpg" alt="Tofu général Tao" class="img-fluid mb-3">
+        </div>
+        <div class="col-md-6 order-md-1">
+          <div class="text-container">
+            <h2>Tofu général Tao</h2>
+
+            <h3>Ingrédients :</h3>
+            <h4>Pour le tofu :</h4>
+            <ul class="ingredients-list">
+              <li class="ingredient">1 bloc de tofu extra ferme</li>
+              <li class="ingredient" data-unit="soupe">1 cuillère à soupe de sauce soya</li>
+              <li class="ingredient" data-unit="soupe">1 cuillère à soupe de sirop d'érable</li>
+              <li class="ingredient" data-unit="soupe">1 cuillère à soupe de vinaigre de riz</li>
+              <li class="ingredient" data-unit="tasse">1/4 de tasse de levure alimentaire</li>
+              <li class="ingredient" data-unit="soupe">2 cuillères à soupe de fécule de maïs</li>
+              <li class="ingredient" data-unit="soupe">2 cuillères à soupe d'huile végétale</li>
+            </ul>
+            <h4>Pour la sauce :</h4>
+            <ul class="ingredients-list">
+              <li class="ingredient" data-unit="soupe">2 cuillères à soupe de sauce soya</li>
+              <li class="ingredient" data-unit="soupe">3 cuillères à soupe de sirop d'érable</li>
+              <li class="ingredient" data-unit="soupe">1 cuillère à soupe de vinaigre de riz</li>
+              <li class="ingredient" data-unit="the">2 cuillères à thé de sriracha</li>
+              <li class="ingredient" data-unit="the">2 cuillères à thé d'huile de sésame grillé</li>
+              <li class="ingredient" data-unit="tasse">1 tasse d'eau</li>
+              <li class="ingredient" data-unit="soupe">1 cuillère à soupe de fécule de maïs</li>
+              <li class="ingredient" data-unit="soupe">1 cuillère à soupe d'huile végétale</li>
+              <li class="ingredient">2 gousses d'ail hachées</li>
+              <li class="ingredient">1 oignon coupé</li>
+              <li class="ingredient" data-unit="the">1/2 cuillère à thé de sel</li>
+              <li class="ingredient" data-unit="soupe">1 cuillère à soupe de ketchup</li>
+              <li class="ingredient">2 oignons verts</li>
+              <li class="ingredient">Graines de sésame</li>
+            </ul>
+
+            <h3>Instructions :</h3>
+            <h4>Pour le tofu :</h4>
+            <ol>
+              <li>Pressez le tofu pour retirer l’excédent d’eau.</li>
+              <li>Dans un bol et avec vos mains, défaites le tofu en morceaux de la grosseur d’une bouchée. Versez la sauce soya, le sirop d’érable et le vinaigre de riz sur le tofu. Mélangez le tout pour bien enrober chaque morceau.</li>
+              <li>Ajoutez la levure alimentaire, la fécule de maïs et l’huile, puis mélangez de nouveau.</li>
+              <li>Mettez le tofu dans le panier de cuisson de la friteuse à air. Faites cuire le tofu de 9 à 11 minutes à 375 °F, jusqu’à ce qu’il soit bien doré.</li>
+            </ol>
+            <h4>Pour la sauce :</h4>
+            <ol>
+              <li>Dans un petit bol, mettez la sauce soya, le sirop d'érable, le vinaigre de riz, la sauce sriracha, l’huile de sésame grillé, l’eau et la fécule de maïs. Mélangez la sauce.</li>
+              <li>Dans une poêle à feu moyen-vif, faites chauffer l’huile. Ajoutez l’ail et une pincée de sel et faites sauter quelques secondes.</li>
+              <li>Ajoutez le ketchup et poursuivez la cuisson quelques secondes.</li>
+              <li>Ajoutez l'oignon et faites sauter 2 minutes.</li>
+              <li>Versez la sauce dans la poêle et mélangez-la bien. Laissez-la réduire 3 minutes.</li>
+              <li>Ajoutez le tofu et faites-le cuire de 3 à 4 minutes, jusqu’à ce que la sauce soit bien épaisse.</li>
+              <li>Garnissez le tout de graines de sésame et d’oignons verts tranchés finement.</li>
+            </ol>
+
+            <!-- Bouton pour convertir les quantités en ml -->
+            <button class="convert-button btn btn-primary">Convertir les unités</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ajoute d'autres sections pour chaque recette -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/mathjs@12.2.1/lib/browser/math.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!-- Ajoute le script personnalisé -->
+  <script src="script.js"></script>
+</body>
+
+</html>

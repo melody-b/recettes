@@ -35,43 +35,77 @@
   </nav>
 
   <section id="salade-carottes" class="recipe active">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 order-md-2">
-          <img src="images/salade-carottes.jpg" alt="Salade de carottes" class="img-fluid mb-3">
+    <div class="recipe-hero">
+      <img src="images/salade-carottes.jpg" alt="Salade de carottes" class="recipe-hero-image">
+    </div>
+    <div class="recipe-content-wrapper">
+      <div class="container">
+        <div class="recipe-header">
+          <h2 class="recipe-title">Salade de carottes</h2>
+          <p class="recipe-subtitle">Une salade fraîche et colorée parfaite pour l'été</p>
+          <p class="recipe-description">Une salade de carottes râpées fraîche et croquante, agrémentée d'une vinaigrette au miel et à la moutarde. Parfaite en accompagnement ou en entrée.</p>
         </div>
-        <div class="col-md-6 order-md-1">
-          <div class="text-container">
-            <h2>Salade de carottes</h2>
 
-            <h3>Ingrédients :</h3>
+        <div class="recipe-tabs">
+          <button class="tab-button active" data-tab="ingredients">Ingrédients</button>
+          <button class="tab-button" data-tab="directions">Instructions</button>
+        </div>
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="ingredients">
             <ul class="ingredients-list">
-              <li class="ingredient">4 carottes</li>
-              <li class="ingredient">2 oignons verts</li>
-              <li class="ingredient" data-unit="tasse">1/4 de tasse de persil</li>
-              <li class="ingredient" data-unit="tasse">1/4 de tasse de coriandre</li>
-              <li class="ingredient" data-unit="the">1.5 cuillère à thé de moutarde de Dijon</li>
-              <li class="ingredient" data-unit="soupe">1 cuillère à soupe de miel</li>
-              <li class="ingredient" data-unit="soupe">2 cuillères à soupe de jus de citron</li>
-              <li class="ingredient" data-unit="soupe">4 cuillères à soupe d'huile d'olive extra vierge</li>
-              <li class="ingredient" data-unit="the">1/2 cuillère à thé de sel</li>
-              <li class="ingredient" data-unit="the">1/4 cuillère à thé de poivre</li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Carrot.png" alt="Carottes" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">4 carottes</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Spring Onions.png" alt="Oignons verts" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">2 oignons verts</span>
+              </li>
+              <li class="ingredient" data-unit="tasse">
+                <img src="https://www.themealdb.com/images/ingredients/Parsley.png" alt="Persil" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1/4 de tasse de persil</span>
+              </li>
+              <li class="ingredient" data-unit="tasse">
+                <img src="https://www.themealdb.com/images/ingredients/Coriander.png" alt="Coriandre" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1/4 de tasse de coriandre</span>
+              </li>
+              <li class="ingredient" data-unit="the">
+                <img src="https://www.themealdb.com/images/ingredients/Dijon Mustard.png" alt="Moutarde de Dijon" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1.5 cuillère à thé de moutarde de Dijon</span>
+              </li>
+              <li class="ingredient" data-unit="soupe">
+                <img src="https://www.themealdb.com/images/ingredients/Honey.png" alt="Miel" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 cuillère à soupe de miel</span>
+              </li>
+              <li class="ingredient" data-unit="soupe">
+                <img src="https://www.themealdb.com/images/ingredients/Lemon Juice.png" alt="Jus de citron" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">2 cuillères à soupe de jus de citron</span>
+              </li>
+              <li class="ingredient" data-unit="soupe">
+                <img src="https://www.themealdb.com/images/ingredients/Olive Oil.png" alt="Huile d'olive" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">4 cuillères à soupe d'huile d'olive extra vierge</span>
+              </li>
+              <li class="ingredient" data-unit="the">
+                <img src="https://www.themealdb.com/images/ingredients/Salt.png" alt="Sel" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1/2 cuillère à thé de sel</span>
+              </li>
+              <li class="ingredient" data-unit="the">
+                <img src="https://www.themealdb.com/images/ingredients/Black Pepper.png" alt="Poivre" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1/4 cuillère à thé de poivre</span>
+              </li>
             </ul>
-
-            <h3>Instructions :</h3>
-            <ol>
+            <button class="convert-button">Convertir les unités</button>
+          </div>
+          <div class="tab-pane" id="directions">
+            <ol class="instructions-list">
               <li>Éplucher et râper les carottes.</li>
               <li>Couper les oignons verts, le persil et la coriandre finement.</li>
-              <li>Dans un bol, mélanger la moutarde de Dijon, le miel, le jus de citron, l'huile d'olive, le sel et le
-                poivre pour faire la vinaigrette.</li>
-              <li>Dans un grand saladier, mélanger les carottes râpées, les oignons verts, le persil et la coriandre.
-              </li>
+              <li>Dans un bol, mélanger la moutarde de Dijon, le miel, le jus de citron, l'huile d'olive, le sel et le poivre pour faire la vinaigrette.</li>
+              <li>Dans un grand saladier, mélanger les carottes râpées, les oignons verts, le persil et la coriandre.</li>
               <li>Verser la vinaigrette sur la salade et bien mélanger.</li>
               <li>Placer au réfrigérateur pendant au moins 30 minutes avant de servir.</li>
             </ol>
-
-            <!-- Bouton pour convertir les quantités en ml -->
-            <button class="convert-button btn btn-primary">Convertir les unités</button>
           </div>
         </div>
       </div>
@@ -81,65 +115,134 @@
 
 
   <section id="tofu-general-tao" class="recipe">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 order-md-2">
-          <img src="images/tofu-general-tao.jpg" alt="Tofu général Tao" class="img-fluid mb-3">
+    <div class="recipe-hero">
+      <img src="images/tofu-general-tao.jpg" alt="Tofu général Tao" class="recipe-hero-image">
+    </div>
+    <div class="recipe-content-wrapper">
+      <div class="container">
+        <div class="recipe-header">
+          <h2 class="recipe-title">Tofu général Tao</h2>
+          <p class="recipe-subtitle">Un plat végétarien savoureux et épicé</p>
+          <p class="recipe-description">Un tofu croustillant enrobé d'une sauce sucrée et épicée, inspiré du célèbre poulet général Tao. Parfait pour un repas végétarien réconfortant.</p>
         </div>
-        <div class="col-md-6 order-md-1">
-          <div class="text-container">
-            <h2>Tofu général Tao</h2>
 
-            <h3>Ingrédients :</h3>
-            <h4>Pour le tofu :</h4>
-            <ul class="ingredients-list">
-              <li class="ingredient">1 bloc de tofu extra ferme</li>
-              <li class="ingredient" data-unit="soupe">1 cuillère à soupe de sauce soya</li>
-              <li class="ingredient" data-unit="soupe">1 cuillère à soupe de sirop d'érable</li>
-              <li class="ingredient" data-unit="soupe">1 cuillère à soupe de vinaigre de riz</li>
-              <li class="ingredient" data-unit="tasse">1/4 de tasse de levure alimentaire</li>
-              <li class="ingredient" data-unit="soupe">2 cuillères à soupe de fécule de maïs</li>
-              <li class="ingredient" data-unit="soupe">2 cuillères à soupe d'huile végétale</li>
-            </ul>
-            <h4>Pour la sauce :</h4>
-            <ul class="ingredients-list">
-              <li class="ingredient" data-unit="soupe">2 cuillères à soupe de sauce soya</li>
-              <li class="ingredient" data-unit="soupe">3 cuillères à soupe de sirop d'érable</li>
-              <li class="ingredient" data-unit="soupe">1 cuillère à soupe de vinaigre de riz</li>
-              <li class="ingredient" data-unit="the">2 cuillères à thé de sriracha</li>
-              <li class="ingredient" data-unit="the">2 cuillères à thé d'huile de sésame grillé</li>
-              <li class="ingredient" data-unit="tasse">1 tasse d'eau</li>
-              <li class="ingredient" data-unit="soupe">1 cuillère à soupe de fécule de maïs</li>
-              <li class="ingredient" data-unit="soupe">1 cuillère à soupe d'huile végétale</li>
-              <li class="ingredient">2 gousses d'ail hachées</li>
-              <li class="ingredient">1 oignon coupé</li>
-              <li class="ingredient" data-unit="the">1/2 cuillère à thé de sel</li>
-              <li class="ingredient" data-unit="soupe">1 cuillère à soupe de ketchup</li>
-              <li class="ingredient">2 oignons verts</li>
-              <li class="ingredient">Graines de sésame</li>
-            </ul>
+        <div class="recipe-tabs">
+          <button class="tab-button active" data-tab="ingredients-tao">Ingrédients</button>
+          <button class="tab-button" data-tab="directions-tao">Instructions</button>
+        </div>
 
-            <h3>Instructions :</h3>
-            <h4>Pour le tofu :</h4>
-            <ol>
-              <li>Pressez le tofu pour retirer l’excédent d’eau.</li>
-              <li>Dans un bol et avec vos mains, défaites le tofu en morceaux de la grosseur d’une bouchée. Versez la sauce soya, le sirop d’érable et le vinaigre de riz sur le tofu. Mélangez le tout pour bien enrober chaque morceau.</li>
-              <li>Ajoutez la levure alimentaire, la fécule de maïs et l’huile, puis mélangez de nouveau.</li>
-              <li>Mettez le tofu dans le panier de cuisson de la friteuse à air. Faites cuire le tofu de 9 à 11 minutes à 375 °F, jusqu’à ce qu’il soit bien doré.</li>
+        <div class="tab-content">
+          <div class="tab-pane active" id="ingredients-tao">
+            <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 1rem; color: #2d3436;">Pour le tofu :</h4>
+            <ul class="ingredients-list">
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Tofu.png" alt="Tofu" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 bloc de tofu extra ferme</span>
+              </li>
+              <li class="ingredient" data-unit="soupe">
+                <img src="https://www.themealdb.com/images/ingredients/Soy Sauce.png" alt="Sauce soya" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 cuillère à soupe de sauce soya</span>
+              </li>
+              <li class="ingredient" data-unit="soupe">
+                <img src="https://www.themealdb.com/images/ingredients/Maple Syrup.png" alt="Sirop d'érable" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 cuillère à soupe de sirop d'érable</span>
+              </li>
+              <li class="ingredient" data-unit="soupe">
+                <img src="https://www.themealdb.com/images/ingredients/Rice Vinegar.png" alt="Vinaigre de riz" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 cuillère à soupe de vinaigre de riz</span>
+              </li>
+              <li class="ingredient" data-unit="tasse">
+                <img src="https://www.themealdb.com/images/ingredients/yeast.png" alt="Levure alimentaire" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1/4 de tasse de levure alimentaire</span>
+              </li>
+              <li class="ingredient" data-unit="soupe">
+                <img src="https://www.themealdb.com/images/ingredients/cornstarch.png" alt="Fécule de maïs" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">2 cuillères à soupe de fécule de maïs</span>
+              </li>
+              <li class="ingredient" data-unit="soupe">
+                <img src="https://www.themealdb.com/images/ingredients/Vegetable Oil.png" alt="Huile végétale" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">2 cuillères à soupe d'huile végétale</span>
+              </li>
+            </ul>
+            <h4 style="font-size: 1.1rem; font-weight: 600; margin: 1.5rem 0 1rem; color: #2d3436;">Pour la sauce :</h4>
+            <ul class="ingredients-list">
+              <li class="ingredient" data-unit="soupe">
+                <img src="https://www.themealdb.com/images/ingredients/Soy Sauce.png" alt="Sauce soya" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">2 cuillères à soupe de sauce soya</span>
+              </li>
+              <li class="ingredient" data-unit="soupe">
+                <img src="https://www.themealdb.com/images/ingredients/Maple Syrup.png" alt="Sirop d'érable" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">3 cuillères à soupe de sirop d'érable</span>
+              </li>
+              <li class="ingredient" data-unit="soupe">
+                <img src="https://www.themealdb.com/images/ingredients/Rice Vinegar.png" alt="Vinaigre de riz" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 cuillère à soupe de vinaigre de riz</span>
+              </li>
+              <li class="ingredient" data-unit="the">
+                <img src="https://www.themealdb.com/images/ingredients/Chilli.png" alt="Sriracha" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">2 cuillères à thé de sriracha</span>
+              </li>
+              <li class="ingredient" data-unit="the">
+                <img src="https://www.themealdb.com/images/ingredients/Sesame_seed_oil.png" alt="Huile de sésame" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">2 cuillères à thé d'huile de sésame grillé</span>
+              </li>
+              <li class="ingredient" data-unit="tasse">
+                <img src="https://www.themealdb.com/images/ingredients/Water.png" alt="Eau" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 tasse d'eau</span>
+              </li>
+              <li class="ingredient" data-unit="soupe">
+                <img src="https://www.themealdb.com/images/ingredients/cornstarch.png" alt="Fécule de maïs" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 cuillère à soupe de fécule de maïs</span>
+              </li>
+              <li class="ingredient" data-unit="soupe">
+                <img src="https://www.themealdb.com/images/ingredients/Vegetable Oil.png" alt="Huile végétale" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 cuillère à soupe d'huile végétale</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Garlic.png" alt="Ail" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">2 gousses d'ail hachées</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Onion.png" alt="Oignon" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 oignon coupé</span>
+              </li>
+              <li class="ingredient" data-unit="the">
+                <img src="https://www.themealdb.com/images/ingredients/Salt.png" alt="Sel" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1/2 cuillère à thé de sel</span>
+              </li>
+              <li class="ingredient" data-unit="soupe">
+                <img src="https://www.themealdb.com/images/ingredients/Tomato Ketchup.png" alt="Ketchup" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 cuillère à soupe de ketchup</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Spring Onions.png" alt="Oignons verts" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">2 oignons verts</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Sesame Seed.png" alt="Graines de sésame" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">Graines de sésame</span>
+              </li>
+            </ul>
+            <button class="convert-button">Convertir les unités</button>
+          </div>
+          <div class="tab-pane" id="directions-tao">
+            <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 1rem; color: #2d3436;">Pour le tofu :</h4>
+            <ol class="instructions-list">
+              <li>Pressez le tofu pour retirer l'excédent d'eau.</li>
+              <li>Dans un bol et avec vos mains, défaites le tofu en morceaux de la grosseur d'une bouchée. Versez la sauce soya, le sirop d'érable et le vinaigre de riz sur le tofu. Mélangez le tout pour bien enrober chaque morceau.</li>
+              <li>Ajoutez la levure alimentaire, la fécule de maïs et l'huile, puis mélangez de nouveau.</li>
+              <li>Mettez le tofu dans le panier de cuisson de la friteuse à air. Faites cuire le tofu de 9 à 11 minutes à 375 °F, jusqu'à ce qu'il soit bien doré.</li>
             </ol>
-            <h4>Pour la sauce :</h4>
-            <ol>
-              <li>Dans un petit bol, mettez la sauce soya, le sirop d'érable, le vinaigre de riz, la sauce sriracha, l’huile de sésame grillé, l’eau et la fécule de maïs. Mélangez la sauce.</li>
-              <li>Dans une poêle à feu moyen-vif, faites chauffer l’huile. Ajoutez l’ail et une pincée de sel et faites sauter quelques secondes.</li>
+            <h4 style="font-size: 1.1rem; font-weight: 600; margin: 1.5rem 0 1rem; color: #2d3436;">Pour la sauce :</h4>
+            <ol class="instructions-list">
+              <li>Dans un petit bol, mettez la sauce soya, le sirop d'érable, le vinaigre de riz, la sauce sriracha, l'huile de sésame grillé, l'eau et la fécule de maïs. Mélangez la sauce.</li>
+              <li>Dans une poêle à feu moyen-vif, faites chauffer l'huile. Ajoutez l'ail et une pincée de sel et faites sauter quelques secondes.</li>
               <li>Ajoutez le ketchup et poursuivez la cuisson quelques secondes.</li>
               <li>Ajoutez l'oignon et faites sauter 2 minutes.</li>
               <li>Versez la sauce dans la poêle et mélangez-la bien. Laissez-la réduire 3 minutes.</li>
-              <li>Ajoutez le tofu et faites-le cuire de 3 à 4 minutes, jusqu’à ce que la sauce soit bien épaisse.</li>
-              <li>Garnissez le tout de graines de sésame et d’oignons verts tranchés finement.</li>
+              <li>Ajoutez le tofu et faites-le cuire de 3 à 4 minutes, jusqu'à ce que la sauce soit bien épaisse.</li>
+              <li>Garnissez le tout de graines de sésame et d'oignons verts tranchés finement.</li>
             </ol>
-
-            <!-- Bouton pour convertir les quantités en ml -->
-            <button class="convert-button btn btn-primary">Convertir les unités</button>
           </div>
         </div>
       </div>
@@ -147,238 +250,437 @@
   </section>
 
   <section id="oeufs-tomates" class="recipe">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 order-md-2">
-                <img src="images/oeufs-tomates.jpg" alt="Oeufs Tomates" class="img-fluid mb-3">
-            </div>
-            <div class="col-md-6 order-md-1">
-                <div class="text-container">
-                    <h2>Oeufs Tomates</h2>
-
-                    <h3>Ingrédients :</h3>
-                    <ul class="ingredients-list">
-                        <li class="ingredient">4 tomates roma mûres coupées en quartiers (ou substituer par 2 grosses tomates)</li>
-                        <li class="ingredient">6 œufs</li>
-                        <li class="ingredient">1 oignon vert finement haché</li>
-                        <li class="ingredient" data-unit="tasse">1/4 de tasse d'eau</li>
-                        <li class="ingredient" data-unit="the">1 cuillère à thé d'huile de sésame</li>
-                        <li class="ingredient" data-unit="the">2 cuillères à thé d'huile</li>
-                        <li class="ingredient">3 cuillères à soupe de ketchup</li>
-                        <li class="ingredient" data-unit="soupe">1/2 cuillère à soupe de fécule de maïs</li>
-                        <li class="ingredient" data-unit="the">1 cuillère à thé de sucre</li>
-                        <li class="ingredient" data-unit="the">1/2 cuillère à thé de sel</li>
-                        <li class="ingredient" data-unit="tasse">1/2 tasse d'eau</li>
-                    </ul>
-
-                    <h3>Instructions :</h3>
-                    <ol>
-                        <li>Dans un bol, mélangez les ingrédients de la sauce et mettez de côté.</li>
-                        <li>Dans un autre bol, cassez vos œufs et ajoutez l'huile de sésame. Battez les œufs et l'huile de sésame pendant 20 à 30 secondes.</li>
-                        <li>Chauffez une poêle antiadhésive à feu moyen. Une fois que la poêle est chaude, ajoutez 1 cuillère à café d'huile. Une fois l'huile chaude, ajoutez le mélange d'œufs. Brouillez les œufs jusqu'à ce qu'ils prennent forme mais restent brillants et humides. Ne les faites pas trop cuire. Retirez les œufs cuits de la poêle.</li>
-                        <li>De retour dans la poêle, ajoutez l'huile restante et les oignons verts. Faites cuire pendant 5 secondes ou jusqu'à ce qu'ils dégagent leur parfum.</li>
-                        <li>Ajoutez les tomates et l'eau. Laissez cuire les tomates pendant 2 à 3 minutes jusqu'à ce qu'elles ramollissent et que la peau commence à se détacher.</li>
-                        <li>Versez la sauce sur les tomates. Laissez mijoter la sauce et épaissir légèrement, environ 2 minutes.</li>
-                        <li>Une fois que la sauce est légèrement plus épaisse, ajoutez les œufs et pliez-les délicatement dans la sauce et les tomates. Retirez du feu. Servez et dégustez. Facultatif : garnissez de plus d'oignons verts.</li>
-                    </ol>
-
-                    <!-- Bouton pour convertir les unités, si nécessaire -->
-                    <button class="convert-button btn btn-primary">Convertir les unités</button>
-                </div>
-            </div>
-        </div>
+    <div class="recipe-hero">
+      <img src="images/oeufs-tomates.jpg" alt="Oeufs Tomates" class="recipe-hero-image">
     </div>
-</section>
+    <div class="recipe-content-wrapper">
+      <div class="container">
+        <div class="recipe-header">
+          <h2 class="recipe-title">Oeufs Tomates</h2>
+          <p class="recipe-subtitle">Un plat classique chinois réconfortant</p>
+          <p class="recipe-description">Des œufs brouillés crémeux servis avec des tomates mijotées dans une sauce sucrée et savoureuse. Un plat simple mais délicieux.</p>
+        </div>
 
-<section id="cold-noodles" class="recipe">
-  <div class="container">
-      <div class="row">
-          <div class="col-md-6 order-md-2">
-              <img src="images/cold-noodles.jpg" alt="Cold Noodles" class="img-fluid mb-3">
+        <div class="recipe-tabs">
+          <button class="tab-button active" data-tab="ingredients-oeufs">Ingrédients</button>
+          <button class="tab-button" data-tab="directions-oeufs">Instructions</button>
+        </div>
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="ingredients-oeufs">
+            <ul class="ingredients-list">
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Tomato.png" alt="Tomates" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">4 tomates roma mûres coupées en quartiers (ou substituer par 2 grosses tomates)</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Eggs.png" alt="Œufs" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">6 œufs</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Spring Onions.png" alt="Oignon vert" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 oignon vert finement haché</span>
+              </li>
+              <li class="ingredient" data-unit="tasse">
+                <img src="https://www.themealdb.com/images/ingredients/Water.png" alt="Eau" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1/4 de tasse d'eau</span>
+              </li>
+              <li class="ingredient" data-unit="the">
+                <img src="https://www.themealdb.com/images/ingredients/sesame_seed_oil.png" alt="Huile de sésame" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 cuillère à thé d'huile de sésame</span>
+              </li>
+              <li class="ingredient" data-unit="the">
+                <img src="https://www.themealdb.com/images/ingredients/Vegetable Oil.png" alt="Huile" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">2 cuillères à thé d'huile</span>
+              </li>
+            </ul>
+            <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 1rem; color: #2d3436;">Pour la sauce :</h4>
+            <ul class="ingredients-list">
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Tomato Ketchup.png" alt="Ketchup" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">3 cuillères à soupe de ketchup</span>
+              </li>
+              <li class="ingredient" data-unit="soupe">
+                <img src="https://www.themealdb.com/images/ingredients/cornstarch.png" alt="Fécule de maïs" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1/2 cuillère à soupe de fécule de maïs</span>
+              </li>
+              <li class="ingredient" data-unit="the">
+                <img src="https://www.themealdb.com/images/ingredients/Sugar.png" alt="Sucre" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 cuillère à thé de sucre</span>
+              </li>
+              <li class="ingredient" data-unit="the">
+                <img src="https://www.themealdb.com/images/ingredients/Salt.png" alt="Sel" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1/2 cuillère à thé de sel</span>
+              </li>
+              <li class="ingredient" data-unit="tasse">
+                <img src="https://www.themealdb.com/images/ingredients/Water.png" alt="Eau" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1/2 tasse d'eau</span>
+              </li>
+            </ul>
+            <button class="convert-button">Convertir les unités</button>
           </div>
-          <div class="col-md-6 order-md-1">
-              <div class="text-container">
-                  <h2>Cold Noodles</h2>
-
-                  <h3>Soup:</h3>
-                  <ul class="ingredients-list">
-                    <li class="ingredient">1L water</li>
-                    <li class="ingredient">500ml Sprite</li>
-                    <li class="ingredient">40ml Rice vinegar</li>
-                    <li class="ingredient">40ml Apple cider vinegar</li>
-                    <li class="ingredient">4 tablespoons Sugar</li>
-                    <li class="ingredient">1 teaspoon Soy sauce</li>
-                    <li class="ingredient">1 teaspoon Salt</li>
-                    <li class="ingredient">1 cucumber, sliced</li>
-                    <li class="ingredient">1 onion, diced</li>
-                    <li class="ingredient">1 lemon, quartered</li>
-                    <li class="ingredient">Coriander, chopped</li>
-                </ul>
-                <h3>Garnish:</h3>
-                <ul class="ingredients-list">
-                  <li class="ingredient">Thinly sliced Radish</li>
-                  <li class="ingredient">Kimchi</li>
-                  <li class="ingredient">Boiled eggs</li>
-              </ul>
-
-                  <h3>Instructions:</h3>
-                  <ol>
-                      <li>Mix water, rice vinegar, apple cider vinegar, sugar, soy sauce, Sprite, cucumber, onion, lemon, and coriander in a bowl.</li>
-                      <li>Let the mixture sit in the fridge for a while.</li>
-                      <li>Cook the cold noodles.</li>
-                      <li>Add the mixture to the noodles and add the extra ingredients like radish, kimchi, and eggs.</li>
-                  </ol>
-              </div>
+          <div class="tab-pane" id="directions-oeufs">
+            <ol class="instructions-list">
+              <li>Dans un bol, mélangez les ingrédients de la sauce et mettez de côté.</li>
+              <li>Dans un autre bol, cassez vos œufs et ajoutez l'huile de sésame. Battez les œufs et l'huile de sésame pendant 20 à 30 secondes.</li>
+              <li>Chauffez une poêle antiadhésive à feu moyen. Une fois que la poêle est chaude, ajoutez 1 cuillère à café d'huile. Une fois l'huile chaude, ajoutez le mélange d'œufs. Brouillez les œufs jusqu'à ce qu'ils prennent forme mais restent brillants et humides. Ne les faites pas trop cuire. Retirez les œufs cuits de la poêle.</li>
+              <li>De retour dans la poêle, ajoutez l'huile restante et les oignons verts. Faites cuire pendant 5 secondes ou jusqu'à ce qu'ils dégagent leur parfum.</li>
+              <li>Ajoutez les tomates et l'eau. Laissez cuire les tomates pendant 2 à 3 minutes jusqu'à ce qu'elles ramollissent et que la peau commence à se détacher.</li>
+              <li>Versez la sauce sur les tomates. Laissez mijoter la sauce et épaissir légèrement, environ 2 minutes.</li>
+              <li>Une fois que la sauce est légèrement plus épaisse, ajoutez les œufs et pliez-les délicatement dans la sauce et les tomates. Retirez du feu. Servez et dégustez. Facultatif : garnissez de plus d'oignons verts.</li>
+            </ol>
           </div>
-      </div>
-  </div>
-</section>
-
-<section id="pico-de-gallo" class="recipe">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 order-md-2">
-        <img src="images/pico-de-gallo.jpg" alt="Pico de Gallo" class="img-fluid mb-3">
-      </div>
-      <div class="col-md-6 order-md-1">
-        <div class="text-container">
-          <h2>Pico de Gallo</h2>
-          <h3>Ingredients:</h3>
-          <ul class="ingredients-list">
-            <li class="ingredient">3 Small tomatoes, diced</li>
-            <li class="ingredient">1 Medium onion, diced</li>
-            <li class="ingredient">Juice of 4 limes</li>
-            <li class="ingredient">Cilantro, chopped</li>
-            <li class="ingredient">Clamato juice</li>
-            <li class="ingredient">Tabasco sauce</li>
-            <li class="ingredient">Salt and pepper to taste</li>
-          </ul>
-
-          <h3>Instructions:</h3>
-          <ol>
-            <li>In a bowl, combine diced tomatoes, diced onion, and chopped cilantro.</li>
-            <li>Squeeze the juice of 4 limes into the bowl and stir well.</li>
-            <li>Add Clamato juice to taste.</li>
-            <li>Add Tabasco sauce to taste.</li>
-            <li>Season with salt and pepper to taste.</li>
-            <li>Stir everything together and let the pico de gallo sit for at least 15 minutes to allow the flavors to meld.</li>
-            <li>Serve chilled with tortilla chips, tacos, burritos, or your favorite Mexican dish.</li>
-          </ol>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="pickled-onions" class="recipe">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 order-md-2">
-        <img src="images/pickled-onions.jpg" alt="Pickled Onions" class="img-fluid mb-3">
-      </div>
-      <div class="col-md-6 order-md-1">
-        <div class="text-container">
-          <h2>Pickled Onions</h2>
-          <h3>Ingredients:</h3>
-          <ul class="ingredients-list">
-            <li class="ingredient">½ cup Apple cider vinegar</li>
-            <li class="ingredient">½ cup Warm water</li>
-            <li class="ingredient">1 Tbsp. Sugar</li>
-            <li class="ingredient">1½ tsp. Salt</li>
-            <li class="ingredient">1 Red onion, thinly sliced</li>
-          </ul>
+  <section id="cold-noodles" class="recipe">
+    <div class="recipe-hero">
+      <img src="images/cold-noodles.jpg" alt="Cold Noodles" class="recipe-hero-image">
+    </div>
+    <div class="recipe-content-wrapper">
+      <div class="container">
+        <div class="recipe-header">
+          <h2 class="recipe-title">Cold Noodles</h2>
+          <p class="recipe-subtitle">Rafraîchissant et parfait pour l'été</p>
+          <p class="recipe-description">Des nouilles froides servies dans un bouillon acidulé et rafraîchissant, garnies de légumes croquants et d'œufs. Idéal pour les journées chaudes.</p>
+        </div>
 
-          <h3>Instructions:</h3>
-          <ol>
-            <li>In a small saucepan, combine apple cider vinegar, warm water, sugar, and salt. Heat over medium heat until the sugar and salt dissolve. Remove from heat and let the pickling liquid cool slightly.</li>
-            <li>Place the thinly sliced red onion in a jar.</li>
-            <li>Pour the cooled pickling liquid over the onions, ensuring they are completely submerged.</li>
-            <li>Seal the jar tightly and refrigerate for at least 2 hours, or ideally overnight, for the flavors to develop.</li>
-            <li>Pickled onions can be stored in the refrigerator for up to 2 weeks.</li>
-            <li>Enjoy pickled onions on tacos, burgers, sandwiches, salads, or as a flavorful garnish for any dish.</li>
-          </ol>
+        <div class="recipe-tabs">
+          <button class="tab-button active" data-tab="ingredients-noodles">Ingrédients</button>
+          <button class="tab-button" data-tab="directions-noodles">Instructions</button>
+        </div>
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="ingredients-noodles">
+            <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 1rem; color: #2d3436;">Soup:</h4>
+            <ul class="ingredients-list">
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Water.png" alt="Water" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1L water</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Sprite.png" alt="Sprite" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">500ml Sprite</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Rice Vinegar.png" alt="Rice vinegar" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">40ml Rice vinegar</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Apple Cider Vinegar.png" alt="Apple cider vinegar" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">40ml Apple cider vinegar</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Sugar.png" alt="Sugar" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">4 tablespoons Sugar</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Soy Sauce.png" alt="Soy sauce" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 teaspoon Soy sauce</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Salt.png" alt="Salt" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 teaspoon Salt</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Cucumber.png" alt="Cucumber" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 cucumber, sliced</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Onion.png" alt="Onion" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 onion, diced</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Lemon.png" alt="Lemon" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 lemon, quartered</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Coriander.png" alt="Coriander" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">Coriander, chopped</span>
+              </li>
+            </ul>
+            <h4 style="font-size: 1.1rem; font-weight: 600; margin: 1.5rem 0 1rem; color: #2d3436;">Garnish:</h4>
+            <ul class="ingredients-list">
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Radish.png" alt="Radish" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">Thinly sliced Radish</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/cabbage.png" alt="Kimchi" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">Kimchi</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Eggs.png" alt="Boiled eggs" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">Boiled eggs</span>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-pane" id="directions-noodles">
+            <ol class="instructions-list">
+              <li>Mix water, rice vinegar, apple cider vinegar, sugar, soy sauce, Sprite, cucumber, onion, lemon, and coriander in a bowl.</li>
+              <li>Let the mixture sit in the fridge for a while.</li>
+              <li>Cook the cold noodles.</li>
+              <li>Add the mixture to the noodles and add the extra ingredients like radish, kimchi, and eggs.</li>
+            </ol>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section id="pico-de-gallo" class="recipe">
+    <div class="recipe-hero">
+      <img src="images/pico-de-gallo.jpg" alt="Pico de Gallo" class="recipe-hero-image">
+    </div>
+    <div class="recipe-content-wrapper">
+      <div class="container">
+        <div class="recipe-header">
+          <h2 class="recipe-title">Pico de Gallo</h2>
+          <p class="recipe-subtitle">Une salsa fraîche et piquante</p>
+          <p class="recipe-description">Une salsa mexicaine classique faite de tomates fraîches, d'oignons, de coriandre et de citron vert. Parfaite pour accompagner vos tacos, burritos ou chips.</p>
+        </div>
+
+        <div class="recipe-tabs">
+          <button class="tab-button active" data-tab="ingredients-pico">Ingrédients</button>
+          <button class="tab-button" data-tab="directions-pico">Instructions</button>
+        </div>
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="ingredients-pico">
+            <ul class="ingredients-list">
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Tomato.png" alt="Tomatoes" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">3 Small tomatoes, diced</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Onion.png" alt="Onion" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 Medium onion, diced</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Lime.png" alt="Lime juice" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">Juice of 4 limes</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Coriander.png" alt="Cilantro" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">Cilantro, chopped</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/tomato_juice.png" alt="Clamato juice" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">Clamato juice</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/tabasco_sauce.png" alt="Tabasco sauce" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">Tabasco sauce</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Salt.png" alt="Salt and pepper" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">Salt and pepper to taste</span>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-pane" id="directions-pico">
+            <ol class="instructions-list">
+              <li>In a bowl, combine diced tomatoes, diced onion, and chopped cilantro.</li>
+              <li>Squeeze the juice of 4 limes into the bowl and stir well.</li>
+              <li>Add Clamato juice to taste.</li>
+              <li>Add Tabasco sauce to taste.</li>
+              <li>Season with salt and pepper to taste.</li>
+              <li>Stir everything together and let the pico de gallo sit for at least 15 minutes to allow the flavors to meld.</li>
+              <li>Serve chilled with tortilla chips, tacos, burritos, or your favorite Mexican dish.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pickled-onions" class="recipe">
+    <div class="recipe-hero">
+      <img src="images/pickled-onions.jpg" alt="Pickled Onions" class="recipe-hero-image">
+    </div>
+    <div class="recipe-content-wrapper">
+      <div class="container">
+        <div class="recipe-header">
+          <h2 class="recipe-title">Pickled Onions</h2>
+          <p class="recipe-subtitle">Des oignons marinés acidulés et croquants</p>
+          <p class="recipe-description">Des oignons rouges marinés dans un mélange de vinaigre, de sucre et de sel. Parfaits pour ajouter une touche acidulée à vos tacos, burgers, sandwiches ou salades.</p>
+        </div>
+
+        <div class="recipe-tabs">
+          <button class="tab-button active" data-tab="ingredients-pickled">Ingrédients</button>
+          <button class="tab-button" data-tab="directions-pickled">Instructions</button>
+        </div>
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="ingredients-pickled">
+            <ul class="ingredients-list">
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Apple Cider Vinegar.png" alt="Apple cider vinegar" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">½ cup Apple cider vinegar</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Water.png" alt="Warm water" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">½ cup Warm water</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Sugar.png" alt="Sugar" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 Tbsp. Sugar</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Salt.png" alt="Salt" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1½ tsp. Salt</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Red Onion.png" alt="Red onion" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 Red onion, thinly sliced</span>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-pane" id="directions-pickled">
+            <ol class="instructions-list">
+              <li>In a small saucepan, combine apple cider vinegar, warm water, sugar, and salt. Heat over medium heat until the sugar and salt dissolve. Remove from heat and let the pickling liquid cool slightly.</li>
+              <li>Place the thinly sliced red onion in a jar.</li>
+              <li>Pour the cooled pickling liquid over the onions, ensuring they are completely submerged.</li>
+              <li>Seal the jar tightly and refrigerate for at least 2 hours, or ideally overnight, for the flavors to develop.</li>
+              <li>Pickled onions can be stored in the refrigerator for up to 2 weeks.</li>
+              <li>Enjoy pickled onions on tacos, burgers, sandwiches, salads, or as a flavorful garnish for any dish.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   
-<section id="steamed-egg" class="recipe">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 order-md-2">
-        <img src="images/steamed-egg.jpg" alt="Steamed Egg" class="img-fluid mb-3">
-      </div>
-      <div class="col-md-6 order-md-1">
-        <div class="text-container">
-          <h2>Steamed Egg</h2>
-          <h3>Ingredients:</h3>
-          <ul class="ingredients-list">
-            <li class="ingredient">1 cup Hot water</li>
-            <li class="ingredient">4 Eggs</li>
-            <li class="ingredient">Green onions, chopped (amount to taste)</li>
-            <li class="ingredient">Salt and black pepper (to taste)</li>
-            <li class="ingredient">1 tablespoon Olive oil</li>
-          </ul>
-
-          <h3>Instructions:</h3>
-          <ol>
-            <li>Prepare a steamer by filling a pot with water and bringing it to a boil.</li>
-            <li>In a small bowl, whisk together salt, black pepper, and a little bit of hot water (just enough to dissolve the salt and pepper).</li>
-            <li>In a large bowl, whisk together eggs and olive oil.</li>
-            <li>Gradually add the hot water (1 cup) to the egg mixture while whisking constantly to temper the eggs and prevent them from scrambling.</li>
-            <li>Add the seasoned water (from step 2) and chopped green onions to the egg mixture and stir well to combine.</li>
-            <li>Choose bowls suitable for steaming and ensure they leave about 1.5 inches of space at the top. Divide the egg mixture evenly among the bowls.</li>
-            <li>Carefully place the bowls in the steamer basket and steam for 8 minutes once hot vapor starts coming out.</li>
-            <li>Turn off the heat and let the egg pudding sit in the steamer for an additional 2-3 minutes with the lid closed.</li>
-            <li>Carefully remove the bowls from the steamer and let them cool slightly before serving.</li>
-          </ol>
-        </div>
-      </div>
+  <section id="steamed-egg" class="recipe">
+    <div class="recipe-hero">
+      <img src="images/steamed-egg.jpg" alt="Steamed Egg" class="recipe-hero-image">
     </div>
-  </div>
-</section>
+    <div class="recipe-content-wrapper">
+      <div class="container">
+        <div class="recipe-header">
+          <h2 class="recipe-title">Steamed Egg</h2>
+          <p class="recipe-subtitle">Un plat d'œufs vapeur délicat et crémeux</p>
+          <p class="recipe-description">Des œufs cuits à la vapeur pour obtenir une texture lisse et crémeuse. Un plat réconfortant.</p>
+        </div>
 
-<section id="daikon-radish" class="recipe">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 order-md-2">
-        <img src="images/daikon-radish.jpg" alt="Marinated Daikon Radish" class="img-fluid mb-3">
-      </div>
-      <div class="col-md-6 order-md-1">
-        <div class="text-container">
-          <h2>Marinated Daikon Radish</h2>
-          <h3>Ingredients:</h3>
-          <div class="ingredients-list">
-            <h4>Main:</h4>
-            <ul>
-              <li class="ingredient">750g Daikon radish, peeled</li>
-              <li class="ingredient">2 Tbsp Green onion (optional), finely chopped</li>
-            </ul>
-            <h4>Sauce (Mix these in a bowl):</h4>
-            <ul>
-              <li class="ingredient">1 Tbsp Gochugaru</li>
-              <li class="ingredient">1 Tbsp Oyster Sauce</li>
-              <li class="ingredient">1 Tbsp Sugar</li>
-              <li class="ingredient">1/2 Tbsp Minced garlic</li>
-              <li class="ingredient">1 tsp salt</li>
+        <div class="recipe-tabs">
+          <button class="tab-button active" data-tab="ingredients-steamed">Ingrédients</button>
+          <button class="tab-button" data-tab="directions-steamed">Instructions</button>
+        </div>
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="ingredients-steamed">
+            <ul class="ingredients-list">
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Water.png" alt="Eau chaude" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 tasse d'eau chaude</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Eggs.png" alt="Œufs" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">4 oeufs</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Spring Onions.png" alt="Oignons verts" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">Oignons verts, hachés</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Salt.png" alt="Sel et poivre" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">Sel et poivre noir</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Olive Oil.png" alt="Huile d'olive" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 cuillère à soupe d'huile d'olive</span>
+              </li>
             </ul>
           </div>
-
-          <h3>Instructions:</h3>
-          <ol>
-            <li>Julienne the daikon radish using a knife or a mandolin slicer. Aim for matchstick-style pieces about 6 cm to 7 cm (2.5 inches) long.</li>
-            <li>Place the julienned radish in a mixing bowl.</li>
-            <li>Combine all sauce ingredients (Gochugaru, oyster sauce, sugar, garlic, and salt) in a separate bowl and mix well.</li>
-            <li>Pour the sauce over the daikon radish in the mixing bowl and use your hands to toss and coat the radish evenly.</li>
-            <li>(Optional) Garnish with finely chopped green onion.</li>
-            <li>Transfer the seasoned radish to a glass container. Refrigerate for at least 30 minutes to allow the flavors to develop. You can enjoy it right away, or store it in the refrigerator for 5 to 7 days.</li>
-          </ol>
+          <div class="tab-pane" id="directions-steamed">
+            <ol class="instructions-list">
+              <li>Prepare a steamer by filling a pot with water and bringing it to a boil.</li>
+              <li>In a small bowl, whisk together salt, black pepper, and a little bit of hot water (just enough to dissolve the salt and pepper).</li>
+              <li>In a large bowl, whisk together eggs and olive oil.</li>
+              <li>Gradually add the hot water (1 cup) to the egg mixture while whisking constantly to temper the eggs and prevent them from scrambling.</li>
+              <li>Add the seasoned water (from step 2) and chopped green onions to the egg mixture and stir well to combine.</li>
+              <li>Choose bowls suitable for steaming and ensure they leave about 1.5 inches of space at the top. Divide the egg mixture evenly among the bowls.</li>
+              <li>Carefully place the bowls in the steamer basket and steam for 8 minutes once hot vapor starts coming out.</li>
+              <li>Turn off the heat and let the egg pudding sit in the steamer for an additional 2-3 minutes with the lid closed.</li>
+              <li>Carefully remove the bowls from the steamer and let them cool slightly before serving.</li>
+            </ol>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section id="daikon-radish" class="recipe">
+    <div class="recipe-hero">
+      <img src="images/daikon-radish.jpg" alt="Marinated Daikon Radish" class="recipe-hero-image">
+    </div>
+    <div class="recipe-content-wrapper">
+      <div class="container">
+        <div class="recipe-header">
+          <h2 class="recipe-title">Marinated Daikon Radish</h2>
+          <p class="recipe-subtitle">Un accompagnement coréen épicé et croquant</p>
+          <p class="recipe-description">Du radis daikon mariné dans une sauce épicée et sucrée. Un banchan coréen classique qui ajoute de la fraîcheur et du croquant à vos repas.</p>
+        </div>
+
+        <div class="recipe-tabs">
+          <button class="tab-button active" data-tab="ingredients-daikon">Ingrédients</button>
+          <button class="tab-button" data-tab="directions-daikon">Instructions</button>
+        </div>
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="ingredients-daikon">
+            <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 1rem; color: #2d3436;">Main:</h4>
+            <ul class="ingredients-list">
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Radish.png" alt="Daikon radish" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">750g Daikon radish, peeled</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Spring Onions.png" alt="Green onion" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">2 Tbsp Green onion (optional), finely chopped</span>
+              </li>
+            </ul>
+            <h4 style="font-size: 1.1rem; font-weight: 600; margin: 1.5rem 0 1rem; color: #2d3436;">Sauce (Mix these in a bowl):</h4>
+            <ul class="ingredients-list">
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/chili_powder.png" alt="Gochugaru" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 Tbsp Gochugaru</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Oyster Sauce.png" alt="Oyster Sauce" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 Tbsp Oyster Sauce</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Sugar.png" alt="Sugar" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 Tbsp Sugar</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Garlic.png" alt="Garlic" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1/2 Tbsp Minced garlic</span>
+              </li>
+              <li class="ingredient">
+                <img src="https://www.themealdb.com/images/ingredients/Salt.png" alt="Salt" class="ingredient-image" onerror="this.style.display='none'">
+                <span class="ingredient-text">1 tsp salt</span>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-pane" id="directions-daikon">
+            <ol class="instructions-list">
+              <li>Julienne the daikon radish using a knife or a mandolin slicer. Aim for matchstick-style pieces about 6 cm to 7 cm (2.5 inches) long.</li>
+              <li>Place the julienned radish in a mixing bowl.</li>
+              <li>Combine all sauce ingredients (Gochugaru, oyster sauce, sugar, garlic, and salt) in a separate bowl and mix well.</li>
+              <li>Pour the sauce over the daikon radish in the mixing bowl and use your hands to toss and coat the radish evenly.</li>
+              <li>(Optional) Garnish with finely chopped green onion.</li>
+              <li>Transfer the seasoned radish to a glass container. Refrigerate for at least 30 minutes to allow the flavors to develop. You can enjoy it right away, or store it in the refrigerator for 5 to 7 days.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Ajoute d'autres sections pour chaque recette -->
 

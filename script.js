@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
             
             // Ajouter l'event listener pour le clic
             newIngredient.addEventListener("click", function(e) {
+                e.stopPropagation(); // Empêcher la propagation de l'événement aux parents
                 // Basculer l'état checked
                 const isChecked = newIngredient.classList.contains("checked");
                 updateIngredientState(newIngredient, !isChecked);
